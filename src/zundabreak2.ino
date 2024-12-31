@@ -505,12 +505,11 @@ void loop() {
         avatar.changeParts("rhand", 3);   // 右腕　口元
         avatar.changeParts("lhand", 3);   // 左腕　口元
         avatar.changeParts("eyebrow", 4); // 眉　困り眉2
-        avatar.changeParts("eye", 7);     // 目　普通3　開く（中）
-        avatar.changeParts("mouth", 9);   // 口　んへー
-        blinkOpen = 7;  // まばたき：目　普通3　開く（中）
-        blink = true;
-        kyoroEyeSelect = 2;   // キョロキョロする目　普通3
-        kyoro = true;
+        avatar.changeParts("eye", 14);    // 目　なごみ
+        avatar.changeParts("mouth", 0);   // 口　閉じ　（むふ）
+        blinkOpen = 14;  // まばたき（しない）：目　なごみ
+        blink = false;
+        kyoro = false;
         break;
       case 4: // もうムリ
         blinkOpen = 1;  // まばたき（しない）：目　普通　開く（中）
